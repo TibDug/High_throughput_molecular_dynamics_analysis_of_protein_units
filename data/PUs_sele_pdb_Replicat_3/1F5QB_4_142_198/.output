@@ -1,0 +1,90 @@
+	=============================================
+	 Module gromacs compiled with intelmpi 
+	=============================================
+remove module gromacs/5.1.4 (chemistry molecular dynamics application)
+remove module impi/5.1.3.258 (intelmpi)
+remove module mkl/compilers_and_libraries_2016.4.258/linux (Intel MKL)
+remove module idb/compilers_and_libraries_2016.4.258/linux (Intel Debugger)
+remove module intel/16.4.258 (Intel Compiler Suite)
+load module mkl/compilers_and_libraries_2016.4.258/linux (Intel MKL)
+load module idb/compilers_and_libraries_2016.4.258/linux (Intel Debugger)
+load module intel/16.4.258 (Intel Compiler Suite)
+load module impi/5.1.3.258 (intelmpi)
+load module gcc/4.9.4 (compiler)
+	=============================================
+	 Module gromacs compiled with intelmpi 
+	=============================================
+load module gromacs/5.1.4 (chemistry molecular dynamics application)
+                   :-) GROMACS - mdrun_mpi, VERSION 5.1.4 (-:
+
+                            GROMACS is written by:
+     Emile Apol      Rossen Apostolov  Herman J.C. Berendsen    Par Bjelkmar   
+ Aldert van Buuren   Rudi van Drunen     Anton Feenstra   Sebastian Fritsch 
+  Gerrit Groenhof   Christoph Junghans   Anca Hamuraru    Vincent Hindriksen
+ Dimitrios Karkoulis    Peter Kasson        Jiri Kraus      Carsten Kutzner  
+    Per Larsson      Justin A. Lemkul   Magnus Lundborg   Pieter Meulenhoff 
+   Erik Marklund      Teemu Murtola       Szilard Pall       Sander Pronk   
+   Roland Schulz     Alexey Shvetsov     Michael Shirts     Alfons Sijbers  
+   Peter Tieleman    Teemu Virolainen  Christian Wennberg    Maarten Wolf   
+                           and the project leaders:
+        Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2015, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      mdrun_mpi, VERSION 5.1.4
+Executable:   /opt/software/occigen/applications/gromacs/5.1.4/intel/16.4.258/intelmpi/5.1.3.258/bin/mdrun_mpi
+Data prefix:  /opt/software/occigen/applications/gromacs/5.1.4/intel/16.4.258/intelmpi/5.1.3.258
+Command line:
+  mdrun_mpi -nice 0 -deffnm 1F5QB_4_142_198_NPT_EQ
+
+
+Number of logical cores detected (48) does not match the number reported by OpenMP (2).
+Consider setting the launch configuration manually!
+
+Running on 1 node with total 24 cores, 48 logical cores
+Hardware detected on host n1834.occigen (the node of MPI rank 0):
+  CPU info:
+    Vendor: GenuineIntel
+    Brand:  Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz
+    SIMD instructions most likely to fit this hardware: AVX2_256
+    SIMD instructions selected at GROMACS compile time: AVX2_256
+
+Reading file 1F5QB_4_142_198_NPT_EQ.tpr, VERSION 5.1.4 (single precision)
+Changing nstlist from 10 to 20, rlist from 1 to 1.026
+
+The number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 2
+Using 8 MPI processes
+Using 2 OpenMP threads per MPI process
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+starting mdrun 'Protein in water'
+500000 steps,   1000.0 ps.
+
+NOTE: Turning on dynamic load balancing
+
+
+Writing final coordinates.
+
+ Average load imbalance: 1.6 %
+ Part of the total run time spent waiting due to load imbalance: 1.0 %
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 % Y 0 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    23420.977     1464.092     1599.7
+                 (ns/day)    (hour/ns)
+Performance:       59.013        0.407
+
+gcq#428: "We mathematicians are all a bit crazy." (Lev Landau)
+
